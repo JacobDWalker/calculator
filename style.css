@@ -1,0 +1,38 @@
+* {
+    outline: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calc-container {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+#calc-container > div {
+    margin: 8px;
+}
+
+#screen {
+    flex: auto;
+}
+
+
+
+.button-row {
+    display: flex;
+    flex: auto;
+}
+
+.button-row > button {
+    flex: 1;
+    margin-left: 8px;
+    margin-right: 8px;
+}
