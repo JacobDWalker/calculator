@@ -19,8 +19,6 @@ document.querySelectorAll('.operation').forEach(item => {
             userInput.textContent += evt.target.textContent;
             midOperation = true;
             midDecimal = false;
-        } else {
-            alert("Invalid Input: multiple operators");
         }
     } )
 })
@@ -94,11 +92,6 @@ function modulo (num1, num2) {
     let calc = num1 % num2;
     return decimalToFixed(calc);
 }
-
-const regex = /([-+/*%])\b/g
-
-
-
 function convertTypes(operationArray) {
     for (let i = 0; i < operationArray.length; i += 2) {
         operationArray[i] = Number(operationArray[i]);
@@ -140,3 +133,4 @@ function getOperation(num1, operator, num2) {
 
 let midOperation = false;
 let midDecimal = false;
+const regex = /([-+/*%])/
